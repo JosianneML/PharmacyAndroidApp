@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1"
+    tools:context=".LabTestDetailsActivity">
+
+    <TextView
+        android:id="@+id/textViewTitleLabTestDetailsPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="24*7 HealthCare"
+        android:textColor="@color/purple_200"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025" />
+
+    <TextView
+        android:id="@+id/textViewLTDetailsDeliverLocCairo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="628dp"
+        android:text="Deliver Location: Cairo"
+
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitleLabTestDetailsPage"
+        app:layout_constraintVertical_bias="0.019"
+        app:layout_constraintHorizontal_bias="0.497"/>
+
+    <TextView
+        android:id="@+id/textViewLTDetailsLabTestandPack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Lab Test and Packages"
+
+        android:textColor="@color/yellowLight"
+        android:textSize="20sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLTDetailsDeliverLocCairo"
+        app:layout_constraintVertical_bias="0.019"
+        app:layout_constraintHorizontal_bias="0.497"/>
+
+    <ListView
+        android:id="@+id/listViewLTDetails"
+        android:layout_width="350dp"
+        android:layout_height="400dp"
+        android:layout_margin="10dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLTDetailsLabTestandPack"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/editTextLTDetailsTextMultiline"
+        android:layout_width="290dp"
+        android:layout_height="372dp"
+        android:layout_marginTop="20dp"
+        android:editable="false"
+        android:ems= "10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:text="Hi \n Hello"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLTDetailsLabTestandPack"
+        tools:ignore="MissingConstraints"/>
+
+    <TextView
+        android:id="@+id/textViewLTDetailsTotalCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Cost"
+
+        android:textColor="@color/yellowLight"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLTDetailsAddToCart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLTDetailsTextMultiline"
+        app:layout_constraintVertical_bias="0.517"
+        app:layout_constraintHorizontal_bias="0.51"/>
+
+    <Button
+        android:id="@+id/buttonLTDetailsAddToCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Add To Cart"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLTDetailsBACK"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonLTDetailsBACK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="BACK"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
